@@ -45,10 +45,10 @@ export default function Contact() {
             <h3 className="text-xl font-semibold text-white">Email</h3>
             <p className="text-gray-300 mt-2">
               <a
-                href="mailto:shadthomas71@gmail.com"
+                href="mailto:rashadthomas396@gmail.com"
                 className="text-cyan-300 hover:text-cyan-200 underline"
               >
-                shadthomas71@gmail.com
+                rashadthomas396@gmail.com
               </a>
             </p>
           </div>

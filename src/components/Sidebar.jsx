@@ -40,7 +40,7 @@ const Sidebar = () => {
         {/* Avatar Section */}
         <div className="flex flex-col items-center mb-6">
           <img
-            src="/ayyshuad-profile.png"
+            src="/saas-concept-collage.png"
             alt="Rashad Thomas"
             className="w-40 h-40 rounded-full border-2 border-cyan-400 shadow-md mb-4 object-cover"
           />
