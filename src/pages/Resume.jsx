@@ -26,7 +26,7 @@ export default function Resume() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
-          <p>📍 Panama City, FL • 📞 (912) 432-0339 • ✉️ shadthomas71@gmail.com</p>
+          <p>📍 Panama City, FL • ✉️ rashadthomas396@gmail.com</p>
           <div className="flex justify-center gap-4 text-cyan-400 text-2xl">
             <a href="https://www.linkedin.com/in/stanley-thomas-38405518a/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="hover:text-cyan-300 transition" />
@@ -47,23 +47,21 @@ export default function Resume() {
         {/* === Summary === */}
         <Section title="Professional Summary">
           <p>
-            Disciplined and results-driven U.S. Air Force Staff Sergeant transitioning into a Cloud Engineering role.
-            Proven ability to design, deploy, and secure scalable cloud solutions using AWS and Azure. Adept in
-            scripting, automation, and DevOps practices with a passion for infrastructure as code and cloud security.
-            Brings a mission-critical mindset, leadership experience, and hands-on technical ability to support
-            enterprise cloud operations.
+          Cloud-focused Systems Engineer with 10+ years supporting mission-critical DoD environments and 24/7
+operational networks. Experienced in AWS, Linux, Windows Server, Active Directory, virtualization, automation,
+and secure hybrid architectures. Proven ability to harden systems, automate deployments, troubleshoot complex
+outages, and support scalable, security-first infrastructure across enterprise and tactical environments.
           </p>
         </Section>
 
         {/* === Skills === */}
         <Section title="Key Skills">
           <ul className="grid grid-cols-2 md:grid-cols-3 gap-2 list-disc list-inside">
-            <li><strong>Cloud:</strong> AWS (SAA - In Progress), Azure (Certified), GCP</li>
-            <li><strong>DevOps:</strong> Bash, PowerShell, Git, CI/CD Pipelines</li>
-            <li><strong>Programming:</strong> Java, Python, C#, JavaScript</li>
-            <li><strong>Web:</strong> HTML, CSS, PHP</li>
-            <li><strong>Security:</strong> CompTIA Security+, CISSP (Studying)</li>
-            <li><strong>Databases:</strong> MySQL, SQL</li>
+            <li><strong>CLOUD & DEVOPS:</strong> AWS (EC2, S3, IAM, VPC) • Azure Fundamentals • Docker • Jenkins • GitHub</li>
+            <li><strong>SYSTEMS & OS:</strong> Linux • Windows Server • Active Directory • Hyper-V • MECM/MDT</li>
+            <li><strong>AUTOMATION & SCRIPTING:</strong> Python • Bash • PowerShell</li>
+            <li><strong>SECURITY & COMPLIANCE:</strong> CompTIA Security+ • STIG • ACAS/SCAP • Secure Enclaves • DoD Compliance</li>
+            <li><strong>NETWORKING:</strong> Network Troubleshooting • WAN/LAN • IDS • Access Control</li>
           </ul>
         </Section>
 
@@ -74,22 +72,26 @@ export default function Resume() {
             company="AERMOR LLC"
             date="Jul 2023 – Present"
             bullets={[
-              "Designed and deployed secure cloud infrastructure using AWS EC2, S3, IAM, and VPC.",
-              "Automated deployment tasks using PowerShell and Bash, improving system reliability.",
-              "Integrated cloud-native features into enterprise portfolio solutions.",
-              "Conducted security assessments and created custom exploits to identify vulnerabilities.",
-              "Presented technical findings to senior leadership and stakeholders."
+              "Administer and harden 100+ Windows and Linux systems across hybrid environments supporting 24/7 mission-critical operations.",
+              "Manage Hyper-V virtualization infrastructure including VM deployment, clustering, resource allocation, and performance monitoring.",
+              "Maintain Active Directory users, groups, OUs, certificates, and Group Policy Objects to support secure authentication workflows.",
+              "Support network-attached storage, backup schedules, and recovery operations across multi-system environments.",
+              "Assist in vulnerability assessments by validating ACAS/SCAP findings and implementing remediation actions.",
+              "Troubleshoot system and network outages, restore services, and document root-cause analysis for leadership and engineering teams.",
+              "Develop deployment task sequences using MECM/MDT methodologies and modern automation concepts.",
+              "Deliver technical reports, architecture recommendations, and system improvement roadmaps to senior leadership."
             ]}
           />
           <ExperienceItem
-            role="Software Developer Student"
-            company="SkillStorm – Remote"
-            date="Feb 2023 – Jun 2023"
+            role="United State Air Force Member"
+            date="Nov 2014 - Present"
             bullets={[
-              "Completed 16-week Java development bootcamp with cloud deployment focus.",
-              "Built Spring Boot apps with MySQL and containerized environments.",
-              "Delivered projects ahead of schedule by leveraging agile development.",
-              "Worked with security teams to validate and patch vulnerabilities."
+              "Operate and maintain mission-critical communications systems including radio networks, dispatch consoles, MDTs, and secure messaging platforms.",
+              "Execute advanced troubleshooting on DoD systems to resolve outages and ensure operational continuity during high-tempo operations.",
+              "Maintain digital security logs, incident reporting, and DoD-compliant record retention.",
+              "Support multi-domain architectures including WAN, LAN, secure enclaves, CCTV, IDS, access control, and high-value asset protection systems.",
+              "Collaborate with cybersecurity, intelligence, and IT teams during inspections, audits, and elevated threat responses.",
+              "Mentor and train personnel while enforcing operational standards in classified environments."
             ]}
           />
         </Section>
@@ -102,7 +104,6 @@ export default function Resume() {
             <li>CompTIA Security+ (2023)</li>
             <li>Microsoft Certified: Azure Fundamentals</li>
             <li>AWS Solutions Architect – Associate (In Progress)</li>
-            <li>Google Associate Cloud Engineer (In Progress)</li>
             <li>CISSP (Studying)</li>
           </ul>
         </Section>
