@@ -28,7 +28,7 @@ export default function About() {
         >
           <p>
             I'm a dedicated and disciplined{" "}
-            <strong className="text-white">10-year U.S. Air Force veteran</strong> transitioning into a career in IT.
+            <strong className="text-white">10-year U.S. Air Force veteran</strong> recently transitioned into the IT field.
             Highly organized, self-motivated, and proficient with computer systems, I thrive in learning new tools and
             methodologies quickly. My strengths include{" "}
             <strong className="text-white">problem-solving</strong>,{" "}
