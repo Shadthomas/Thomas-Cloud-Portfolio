@@ -31,6 +31,19 @@ const projects = [
     diagramCaption: "AWS Polly text-to-speech pipeline using Lambda and S3",
     diagramImage: "/text-narrator-diagram.jpeg",
   },
+  {
+    id: "event-announcer",
+    title: "Event Announcement System",
+    description: "Announcement App created using S3, SNS and LAMBDA ",
+    details:
+      "Develops an event announcement website that allows users to subscribe to event notifications via email, view a list of events and create new events through a form",
+    github: "https://github.com/yourusername/aws-3tier-app",
+    demo: null,
+    tech: ["S3", "SNS", "LAMBDA", "API Gateway", "IAM"],
+    hasDiagram: true,
+    diagramCaption: "Event Announcement Website using SNS, LAMBDA and API Gateway",
+    diagramImage: "/event-announcer.png",
+  },
 ];
 
 export default function Projects() {
