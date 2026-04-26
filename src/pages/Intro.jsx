@@ -8,7 +8,7 @@ export default function Intro() {
   return (
     <PageWrapper>
       <section
-        className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-black via-indigo-900 to-gray-900 text-white px-6 py-24 text-center animate-gradient border border-white/10 backdrop-blur-lg rounded-2xl shadow-2xl"
+        className="min-h-screen flex flex-col justify-center items-center px-6 py-24 text-center border border-black/5 dark:border-white/10 backdrop-blur-lg rounded-2xl"
         aria-labelledby="intro-title"
       >
         {/* 👤 Professional Headshot with gradient halo */}
@@ -56,7 +56,7 @@ export default function Intro() {
 
         {/* Animated Subtitle */}
         <motion.p
-          className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-2xl mt-4 mb-12 leading-relaxed"
+          className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-2xl mt-4 mb-12 leading-relaxed"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
@@ -103,7 +103,7 @@ export default function Intro() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="text-white hover:text-cyan-400 transition text-2xl"
+            className="text-gray-600 dark:text-white hover:text-cyan-500 dark:hover:text-cyan-400 transition text-2xl"
           >
             <FaGithub />
           </a>
@@ -112,7 +112,7 @@ export default function Intro() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="text-white hover:text-cyan-400 transition text-2xl"
+            className="text-gray-600 dark:text-white hover:text-cyan-500 dark:hover:text-cyan-400 transition text-2xl"
           >
             <FaLinkedin />
           </a>

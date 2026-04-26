@@ -7,11 +7,11 @@ export default function Resume() {
     <PageWrapper>
       <section
         aria-labelledby="resume-title"
-        className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black px-6 py-12 rounded-2xl shadow-xl"
+        className="relative bg-white dark:bg-gradient-to-br dark:from-gray-900 dark:via-gray-800 dark:to-black px-6 py-12 rounded-2xl shadow-xl transition-colors duration-300"
       >
         <motion.h2
           id="resume-title"
-          className="text-4xl font-extrabold mb-10 text-white tracking-wide text-center"
+          className="text-4xl font-extrabold mb-10 text-gray-900 dark:text-white tracking-wide text-center"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -21,7 +21,7 @@ export default function Resume() {
 
         {/* === Contact & Links === */}
         <motion.div
-          className="text-center text-gray-300 mb-8 space-y-2"
+          className="text-center text-gray-600 dark:text-gray-300 mb-8 space-y-2"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
@@ -134,8 +134,8 @@ function Section({ title, children }) {
       animate={{ opacity: 1 }}
       transition={{ delay: 0.3, duration: 0.8 }}
     >
-      <h3 className="text-2xl font-semibold text-white mb-4">{title}</h3>
-      <div className="text-gray-300 text-lg leading-relaxed">{children}</div>
+      <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">{title}</h3>
+      <div className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">{children}</div>
     </motion.div>
   );
 }
@@ -144,7 +144,7 @@ function ExperienceItem({ role, company, date, bullets }) {
   return (
     <div className="mb-8">
       <h4 className="text-xl font-bold text-cyan-400">{role}</h4>
-      <p className="text-sm text-gray-400 italic mb-1">{company} • {date}</p>
+      <p className="text-sm text-gray-500 dark:text-gray-400 italic mb-1">{company} • {date}</p>
       <ul className="list-disc list-inside space-y-1">
         {bullets.map((item, idx) => (
           <li key={idx}>{item}</li>

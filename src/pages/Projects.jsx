@@ -73,11 +73,11 @@ export default function Projects() {
     <PageWrapper>
       <section
         aria-labelledby="projects-title"
-        className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black px-6 py-12 rounded-2xl shadow-xl"
+        className="relative bg-white dark:bg-gradient-to-br dark:from-gray-900 dark:via-gray-800 dark:to-black px-6 py-12 rounded-2xl shadow-xl transition-colors duration-300"
       >
         <motion.h2
           id="projects-title"
-          className="text-4xl font-extrabold mb-10 text-white tracking-wide text-center"
+          className="text-4xl font-extrabold mb-10 text-gray-900 dark:text-white tracking-wide text-center"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -108,12 +108,12 @@ export default function Projects() {
               transition={{ duration: 0.5 }}
             >
               <Link to={`/projects/${project.id}`} className="block group">
-                <div className="bg-slate-800 border border-slate-700 rounded-2xl p-6 shadow-lg group-hover:ring-1 group-hover:ring-cyan-500 transition-transform hover:scale-[1.01]">
+                <div className="bg-gray-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-2xl p-6 shadow-lg group-hover:ring-1 group-hover:ring-cyan-500 transition-transform hover:scale-[1.01]">
                   <h3 className="text-2xl font-semibold text-cyan-400 mb-2">
                     {project.title}
                   </h3>
-                  <p className="text-gray-300 mb-2">{project.description}</p>
-                  <p className="text-sm text-gray-400 mb-3 line-clamp-2">
+                  <p className="text-gray-600 dark:text-gray-300 mb-2">{project.description}</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mb-3 line-clamp-2">
                     {project.details}
                   </p>
 

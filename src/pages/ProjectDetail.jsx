@@ -476,12 +476,12 @@ export default function ProjectDetail() {
         </motion.div>
 
         {/* Title & Description */}
-        <h2 className="text-4xl font-bold text-white">{project.title}</h2>
-        <p className="text-lg text-gray-300">{project.description}</p>
+        <h2 className="text-4xl font-bold text-gray-900 dark:text-white">{project.title}</h2>
+        <p className="text-lg text-gray-600 dark:text-gray-300">{project.description}</p>
 
         {/* Details */}
         {project.details && (
-          <p className="text-base text-gray-400 mt-2 leading-relaxed">
+          <p className="text-base text-gray-500 dark:text-gray-400 mt-2 leading-relaxed">
             {project.details}
           </p>
         )}
@@ -513,8 +513,8 @@ export default function ProjectDetail() {
         {/* Instructions (if available) */}
         {project.instructions && project.instructions.length > 0 && (
           <div className="mt-6">
-            <h3 className="text-2xl font-semibold text-white mb-2">Instructions</h3>
-            <ul className="list-disc list-inside text-gray-300 space-y-1">
+            <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">Instructions</h3>
+            <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1">
               {project.instructions.map((step, i) => (
                 <li key={i}>{step}</li>
               ))}
