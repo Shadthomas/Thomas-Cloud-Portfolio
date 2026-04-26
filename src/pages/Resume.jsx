@@ -35,7 +35,7 @@ export default function Resume() {
               <FaGithub className="hover:text-cyan-300 transition" />
             </a>
             <a
-              href="/Dev-Resume-Thomas-Updated.pdf"
+              href="/Cloud-Engineer-Resume-Thomas.pdf"
               download
               className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 text-base mt-2 underline"
             >
